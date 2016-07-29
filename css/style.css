@@ -4,7 +4,13 @@ body {
 }
 
 #secondary-actions {
+  font-size: 1rem;
   margin-left: 1rem;
+  vertical-align: middle;
+}
+
+label {
+  font-size: 0.85rem;
 }
 
 #results {

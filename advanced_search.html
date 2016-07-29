@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Search</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/elasticsearch.jquery.min.js"></script>
+  <script src="/js/search_results.js"></script>
+  <script src="/js/advanced_search.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>
+    Recipe Search &mdash; Advanced
+    <span id="secondary-actions">
+      <a href="/">Switch to simple search</a> | <a href="/add.html">Add a new recipe</a>
+    </span>
+  </h1>
+  <form id="advancedSearchForm">
+
+    <!-- Basic information about the recipe -->
+    <div class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-5">
+            <label for="title">Title contains...</label>
+            <input name="title" value="" class="form-control" />
+          </div>
+          <div class="col-xs-2">
+            <label for="prep_time_min_low">Prep time is between...</label>
+            <input name="prep_time_min_low" value="" type="number" placeholder="minutes" class="form-control"/>
+            <label for="prep_time_min_high">and</label>
+            <input name="prep_time_min_high" value="" type="number" placeholder="minutes" class="form-control"/>
+          </div>
+          <div class="col-xs-2">
+            <label for="cook_time_min_low">Cook time is between...</label>
+            <input name="cook_time_min_low" value="" type="number" placeholder="minutes" class="form-control"/>
+            <label for="cook_time_min_high">and</label>
+            <input name="cook_time_min_high" value="" type="number" placeholder="minutes" class="form-control"/>
+          </div>
+          <div class="col-xs-1">
+            <label for="servings">Servings</label>
+            <input name="servings" value="" type="number" class="form-control"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-10">
+            <label for="description">Description contains...  </label>
+            <input name="description" value="" class="form-control"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-5">
+            <label for="ingredients">Ingredients contain...  </label>
+            <input name="ingredients" value="" class="form-control"/>
+          </div>
+          <div class="col-xs-5">
+            <label for="directions">Directions contain...  </label>
+            <input name="directions" value="" class="form-control"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-10">
+            <label for="tags">Tags contain...</label>
+            <input name="tags" value="" placeholder="Comma-separated" class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+  <div class="container">
+    <table class="table table-striped" id="results" />
+  </div>
+</body>
+</html>
