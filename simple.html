@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Search &mdash; Simple</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/elasticsearch.jquery.min.js"></script>
+  <script src="/js/search_results.js"></script>
+  <script src="/js/simple_search.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Recipe Search</h1>
+  <form id="simpleSearchForm" class="form-inline">
+    <input name="q" value="" type="text" placeholder="What are you hungry for?" class="form-control input-lg" size="40" />
+    <button type="submit" class="btn btn-primary">Search</button>
+    <span id="secondary-actions">
+      <a href="/advanced.html">Switch to advanced search</a> | <a href="/add.html">Add a new recipe</a>
+    </span>
+  </form>
+</div>
+<div class="container">
+  <table class="table table-striped" id="results" />
+</div>
+</body>
+</html>
