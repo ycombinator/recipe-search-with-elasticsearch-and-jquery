@@ -6,17 +6,6 @@
  */
 function showSearchResults(response) {
   var hits = response.hits.hits;
-  hits = [
-    {
-      _id: 123,
-      _source: {
-        title: 'foo bar',
-        description: 'foo bar baz',
-        prep_time_min: 10,
-        cook_time_min: 25
-      }
-    }
-  ];
 
   var resultsTable = $('#results');
   resultsTable.html('<thead> \
