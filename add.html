@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Search</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/elasticsearch.jquery.min.js"></script>
+  <script src="/js/add.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Add Recipe</h1>
+  <form id="addForm">
+
+    <!-- Basic information about the recipe -->
+    <div class="container">
+      <h3>The Basics</h3>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-5">
+            <label for="title">Title</label>
+            <input name="title" value="" required="true" class="form-control" />
+          </div>
+          <div class="col-xs-2">
+            <label for="prep_time_min">Preparation time</label>
+            <input name="prep_time_min" value="" type="number" placeholder="minutes" class="form-control"/>
+          </div>
+          <div class="col-xs-2">
+            <label for="cook_time_min">Cooking time</label>
+            <input name="cook_time_min" value="" type="number" placeholder="minutes" class="form-control"/>
+          </div>
+          <div class="col-xs-1">
+            <label for="servings">Servings</label>
+            <input name="servings" value="" type="number" class="form-control"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-10">
+            <label for="description">Description</label>
+            <input name="description" value="" required="true" class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredients -->
+    <div class="container">
+      <h3>Ingredients</h3>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-4">
+            <input name="ingredient" required="true" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <input name="ingredient" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <input name="ingredient" class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Directions -->
+    <div class="container">
+      <h3>Directions</h3>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-6">
+            <input name="direction" required="true" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <input name="direction" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <input name="direction" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <input name="direction" class="form-control"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <input name="direction" class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-10">
+            <label for="tags">Tags</label>
+            <input name="tags" value="" placeholder="Comma-separated" class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
+</body>
+</html>
