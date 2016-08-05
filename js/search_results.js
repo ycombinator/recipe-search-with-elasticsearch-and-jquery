@@ -21,7 +21,7 @@ function showSearchResults(response) {
     recipe.id = hit._id;
 
     var titleLink = $('<a>')
-    .attr('href', '/view.html?id=' + recipe.id)
+    .attr('href', '/view.html#' + recipe.id)
     .text(recipe.title);
 
     var resultRow = $('<tr>')
