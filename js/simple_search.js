@@ -10,7 +10,7 @@ $( document ).ready(function() {
     e.preventDefault();
 
     var form = e.target;
-    var q = form.elements.q.value;
+    var q = form.elements.q.value || '*';
 
     return client.search({ q })
     .then(showSearchResults);
