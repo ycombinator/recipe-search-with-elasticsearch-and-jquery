@@ -12,7 +12,10 @@ $( document ).ready(function() {
     var form = e.target;
     var q = form.elements.q.value || '*';
 
-    return client.search({ q })
+    return client.search({
+      index: 'recipes',
+      q
+    })
     .then(showSearchResults);
   });
 
