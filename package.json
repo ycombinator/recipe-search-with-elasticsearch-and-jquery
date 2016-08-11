@@ -1,0 +1,18 @@
+{
+  "name": "recipe-search-with-elasticsearch-and-jquery",
+  "version": "0.0.1",
+  "description": "Sample recipe search application built using Elasticsearch and JQuery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycombinator/recipe-search-with-elasticsearch-and-jquery.git"
+  },
+  "author": "Shaunak Kashyap <ycombinator@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycombinator/recipe-search-with-elasticsearch-and-jquery/issues"
+  },
+  "homepage": "https://github.com/ycombinator/recipe-search-with-elasticsearch-and-jquery#readme",
+  "dependencies": {
+    "elasticsearch": "^11.0.1"
+  }
+}
